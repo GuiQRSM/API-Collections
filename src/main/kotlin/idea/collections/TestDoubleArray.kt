@@ -10,8 +10,21 @@ fun main() {
         println("Valor:" + it)
     }
     println("-----------------------------")
-    salarios.forEachIndexed { index, salario ->
-        salarios[index] = salario * 1.1
-    }
+
+   salarios.forEachIndexed { index, sal ->
+       salarios[index] = sal * 1.1
+   }
     salarios.forEach { println(it) }
+    println("-----------------------------")
+
+   val salarios2 = doubleArrayOf(2800.0, 5000.0, 13000.0)
+    salarios2.sort()
+    salarios2.forEach {
+        println(it)
+    }
+    println("-------------------------------------------")
+    salarios2.forEachIndexed { index, sal2 ->
+        salarios2[index] = sal2 * 1.1
+    }
+    salarios2.forEach { println(it)}
 }
