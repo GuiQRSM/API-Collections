@@ -14,7 +14,7 @@ fun main() {
     println(relatorio.get(afonso.nome))
 
     println("---------OPERANTIG getAll---------")
+   relatorio.getAll().forEach { println(it) }
 
-    relatorio.getAll().forEach { println(it) }
 
 }
