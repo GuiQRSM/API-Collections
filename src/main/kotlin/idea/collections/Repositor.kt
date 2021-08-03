@@ -8,6 +8,8 @@ class BC <T> {
     }
 
     fun get(id: String) = dados[id]
+
+    fun getAll() = dados.values
 }
 
 
